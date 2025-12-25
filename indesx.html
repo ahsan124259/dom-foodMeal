@@ -18,18 +18,30 @@
         <!-- search field -->
          
          <div class="search-container" class="mt-5 mb-5 ">
-            <input class=" text-red-600 border-solid" type="text" name="" id="search-box" placeholder="search">
-            <!-- <div class="text-blue-600 font-bold w-4/12" id="btn-search">Search</div> -->
-            <button onclick="handleSearch()" class="text-blue-600 font-bold " id="btn-search">Search</btn>
+            <input
+             class=" text-red-600 border-solid" 
+             type="search"
+              name="" 
+              id="search-box"
+               placeholder="search">
+           
+            <button onclick="handleSearch()" 
+            class="text-blue-600 font-bold " 
+            id="btn-search">Search</btn>
          </div>
+         
 
         <!-- display container -->
             
          <section>  
-            <div id="meal-container" class="grid grid-cols-3 gap-4">
+            <div id="meal-container" class="sm:grid grid-cols-1 md:grid grid-cols-3 gap-4 ">
             </div>
          </section>
-         
+         <!-- no found -->
+          <div id="no-found-message"
+           class="hidden">
+                <h3 class="text-3xl">No Phone Found. Please try a new search</h3>
+            </div>
     </main>
     <script src="app.js"></script>
    
